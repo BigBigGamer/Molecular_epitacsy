@@ -47,10 +47,13 @@
 % \setbeamercolor{frametitle right}{fg=white,bg=Brown!85}
 % \setbeamercolor{frametitle}{fg=white,bg=Brown!85}
 %\setbeamercolor{frametitle right}{fg=white,bg=black!85} %
-\setbeamercolor{frametitle}{fg=white,bg=black!85} % Цвет титульника
-\setbeamercolor{item projected}{fg=white,bg=black!85} % Цвет титульника
+\definecolor{MyBG}{RGB}{46,47,114}
+%\setbeamercolor{frametitle}{fg=white,bg=black!85} % Цвет титульника
+\setbeamercolor{frametitle}{fg=white,bg=MyBG}
+
+\setbeamercolor{item projected}{fg=white,bg=MyBG} % Цвет титульника
 \setbeamertemplate{blocks}[rounded][shadow=false] %стиль блоков
-\setbeamertemplate{itemize item}{\color{black!85}$\bullet$}
+\setbeamertemplate{itemize item}{\color{MyBG}$\bullet$}
 \setbeamertemplate{headline}{}
 \setbeamertemplate{footline}{} 
 \setbeamertemplate{navigation symbols}{} % минус навигация
@@ -69,7 +72,7 @@
 
 \setbeamertemplate{enumerate item}{
 	\usebeamercolor[bg]{item projected}
-	\raisebox{1pt}{\colorbox{black!85}{\color{fg}\footnotesize\insertenumlabel}}%
+	\raisebox{1pt}{\colorbox{MyBG}{\color{fg}\footnotesize\insertenumlabel}}%
 }
 
 % \setbeamertemplate{itemize item}{%
@@ -78,7 +81,7 @@
 % }
 
 \setbeamercolor{item projected}{bg=black,fg=white}
-\setbeamercolor{title}{bg=black!85,fg=white}
+\setbeamercolor{title}{bg=MyBG,fg=white}
 
 \setbeamertemplate{frametitle}
 {	

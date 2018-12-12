@@ -4,6 +4,8 @@
 \renewcommand{\epsilon}{\varepsilon}
 \renewcommand{\div}{\operatorname{div}}
 \title[Метод молекулярно-пучковой эпитаксии]{Метод молекулярно-пучковой эпитаксии}
+%\tolerance-1
+\hyphenpenalty=10000 %минус переносы
 
 \author{%
 	Виноградов И.Д. %
@@ -104,27 +106,94 @@
 \end{frame}
 
 \section{Основы МПЭ}
-\subsection{Структурные дефекты поверхности}
+\subsection{Гетероэпитаксиальный рост}
 \begin{frame}[t]
-	\frametitle{Структурные дефекты поверхности}
+	\frametitle{Механизмы гетероэпитаксиального роста}
+	\includegraphics[width = \linewidth]{imgs/struct.png}
+	\Large
+
+	$\gamma_1$ - Энергия поверхности подложки
+	
+	
+	$\gamma_{12}$ - Энергия границы раздела
+	
+	
+	$\gamma_2$ - Энергия поверхности осаждаемого материала
+
+
 \end{frame}
 
+\normalsize
+\begin{frame}[t]
+	\frametitle{Механизмы гетероэпитаксиального роста}
+	\includegraphics[width = \linewidth]{imgs/growth.png}
 
+	\centering
+	\begin{minipage}{0.32\linewidth}
+		\centering
+		$ \gamma_2+\gamma_{12}<\gamma_1 $	
+	\end{minipage}
+	\begin{minipage}{0.32\linewidth}
+		\centering
+		$ \gamma_2+\gamma_{12}>\gamma_1 $	
+	\end{minipage}
+	\begin{minipage}{0.32\linewidth}
+		\centering
+		Подробнее далее
+	\end{minipage}
 
-\section{Основные механизмы роста}
+\end{frame}
 
+\subsection{Механизм Странски-Крастанова}
+\begin{frame}[t]
+	\frametitle{Механизм Странски-Крастанова}
+	\begin{minipage}{0.4\linewidth}
+		\includegraphics[width = \linewidth]{imgs/SKM.png}
+	\end{minipage}	
+	\begin{minipage}{0.59\linewidth}
+		Такой механизм имеет место, когда межатомное расстояние в решетке осаждаемого материала больше, чем в решетке подложки
 
-\section{Гетероэпитаксиальный рост}
+		На начальных этапах выполняется $$ \gamma_2+\gamma_{12}<\gamma_1 $$ и образуется "смачивающий"  слой, приводящий к уменьшению суммарной энергии системы. С определенной
+		толщины энергия упругих напряжений увеличивается, увеличивая общую энергию системы, из-за чего происходит релаксация упругой энергии.
+	\end{minipage}
+\end{frame}
 
+\subsection{Релаксация упругих напряжений}
+\begin{frame}[t]
+	\vfill
+	\frametitle{Механизмы релаксации упругих напряжений}
+	\centering
+	\begin{minipage}{0.15\linewidth}
+		\vfill
+		\includegraphics[width=\linewidth]{imgs/Gecell.png}
+		\vfill
 
-\section{Релаксация упругих напряжений}
-
+		\includegraphics[width=\linewidth]{imgs/Sicell.png}
+		\vfill
+	\end{minipage}
+	\begin{minipage}{0.84\linewidth}
+	\centering
+		
+		"Классический" механизм дислокаций несоответствия
+		\includegraphics[width = \linewidth]{imgs/1st.png}
+		
+		"Когерентный" рост по механизму Странского-Крастанова
+		\includegraphics[width = \linewidth]{imgs/2st.png}
+		
+	\end{minipage}
+	\vfill
+\end{frame}
 
 \section{Рост SiGe структур}
 \subsection{Типы образуемх стуркутр}
-
+\begin{frame}[t]
+	\frametitle{}
+	
+\end{frame}
 
 \section{Эксперимент}
-
+\begin{frame}[t]
+	\frametitle{Эксперимент}
+\end{frame}
 
 \end{document}
